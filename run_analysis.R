@@ -56,7 +56,7 @@ names(activity)[names(activity)=="V2"] <- "activity"
 activity["labelCode"] <- NULL 
 
 ## (5) Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-## Use pipeline of gorup_by and summarize each to find mean values for each variable over subject and activity
+## Use pipeline of group_by and summarize_each to find mean values for each variable over subject and activity
 activity_summary <- activity %>% group_by(subject, activity) %>% summarize_each(funs(mean))
 
 ## write the summary table 
