@@ -47,7 +47,7 @@ These measurements for each subject/activity pair are:
 
 The complete list of variables of each feature vector is available in ‘features.txt’
 
-# R Script Details
+# Data Processing Overview 
 (1) Read & merges the training and the test sets to create one data set: Script uses rbind to combine subject and activity label vectors. Activity data are processed row by row to accomodate extra whitespaces and select only a subset of fields.
 
 (2) Extracts only the measurements on the mean and standard deviation for each measurement: Script uses grep command on feature names to identify desired fields - those ending with mean() or std().
