@@ -1,5 +1,11 @@
 # GettingAndCleaningData-Project
-Final project for the course
+Final project for the course.
+Project contains: 
+- 'README.md': Overview of project and files
+- 'CodeBook.md': Shows information about the processing script and features produced 
+- 'features.txt': List of all features 
+- 'run_analysis.R': Script to convert raw data into summary
+- 'activity_summary.txt': Summary data produced 
 
 # Human Activity Recognition Using Smartphones Dataset -- Summary Data 
 
@@ -12,31 +18,6 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 - Its activity label. 
 - Average values for all 68 measurements for triaxial acceleration and gyroscope measures.
-
-The dataset includes the following files:
-
-- 'README.md'
-
-- 'CodeBook.md': Shows information about the variables used on the feature vector.
-
-- 'features.txt': List of all features.
-
-- 'activity_summary.txt': Average values for all means and standard deviations measured. 
-
-- 'run_analysis.R': Script to convert raw data into summary.
-
-
-# R Script Details
-(1) Read & merges the training and the test sets to create one data set: Script uses rbind to combine subject and activity label vectors. Activity data are processed row by row to accomodate extra whitespaces and select only a subset of fields.
-
-(2) Extracts only the measurements on the mean and standard deviation for each measurement: Script uses grep command on feature names to identify desired fields - those ending with mean() or std().
-
-(3) Uses descriptive activity names to name the activities in the data set: Script replaces text for activities descriptions instead of numeric activity codes. 
-
-(4) Appropriately labels the data set with descriptive variable names: Script uses feature names from the original data as column names.
-
-(5) Creates a second, independent tidy data set with the average of each variable for each activity and each subject: Script uses pipeline of group_by and summarize_each to find mean values for each variable over subject and activity
-
 
 # Original Study Information:
 
