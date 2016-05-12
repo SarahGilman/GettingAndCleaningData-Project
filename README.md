@@ -9,15 +9,15 @@ The data set here took all mean and standard deviation measures from the origina
 
 For each record it is provided:
 
-- Average values for all 68 means and standard deviation values for triaxial acceleration and gyroscope measures.
-- Its activity label. 
 - An identifier of the subject who carried out the experiment.
+- Its activity label. 
+- Average values for all 68 measurements for triaxial acceleration and gyroscope measures.
 
 The dataset includes the following files:
 
-- 'README.txt'
+- 'README.md'
 
-- 'features_info.txt': Shows information about the variables used on the feature vector.
+- 'CodeBook.md': Shows information about the variables used on the feature vector.
 
 - 'features.txt': List of all features.
 
